@@ -48,7 +48,6 @@ ws.onmessage = (event) => {
       li.textContent = `${message.fileName} ready to download to client `;
       li.appendChild(button);
       downloadedContent.appendChild(li);
-      //downloadContentClient(message.fileName);
       break;
     case 'error':
       alert(`Error: ${message.message}`);
